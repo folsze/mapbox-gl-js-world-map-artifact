@@ -16,7 +16,7 @@ export class HomePage {
   constructor() {}
 
   ngOnInit() {
-    fetch('/assets/Countries.geo.json')
+    fetch('/assets/a.geojson')
       .then(response => response.json())
       .then(data => {
         this.features = data.features;
